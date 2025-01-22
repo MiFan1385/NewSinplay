@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use Illuminate\Http\Request;
+use App\Http\Requests\StorePostRequest;
 
 class PostController extends Controller
 {
@@ -19,14 +20,10 @@ class PostController extends Controller
         return view('posts.create');
     }
 
-    public function store(Request $request)
+    public function store(StorePostRequest $request)
     {
-        $validated = $request->validate([
-            'title' => 'required|max:255',
-            'content' => 'required',
-            'images.*' => 'image|max:5120' // 每张图片最大 5MB
-        ]);
-
+        $validated = $request->validated();
+        
         $post = auth()->user()->posts()->create([
             'title' => $validated['title'],
             'content' => $validated['content'],
@@ -39,7 +36,8 @@ class PostController extends Controller
             }
         }
 
-        return redirect()->route('posts.show', $post);
+        return redirect()->route('posts.show', $post)
+            ->with('success', '帖子发布成功！');
     }
 
     public function like(Post $post)
