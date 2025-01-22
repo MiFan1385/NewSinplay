@@ -3,7 +3,7 @@
 @section('content')
     <div class="bg-gradient-to-r from-purple-600 to-purple-800 text-white py-20">
         <div class="container mx-auto px-4 text-center">
-            <h1 class="text-4xl font-bold mb-4">{{ fs_config('site_name')[current_lang_tag()] }}</h1>
+            <h1 class="text-4xl font-bold mb-4">{{ fs_config('site_name')[current_lang_tag()] ?? 'SinPlay' }}</h1>
             <p class="text-xl mb-8">{{ fs_config('site_description')[current_lang_tag()] }}</p>
             @guest
                 <div class="space-x-4">

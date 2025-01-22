@@ -1,9 +1,9 @@
 {
-    "fskey": "CosplayHub",
-    "name": "Cosplay Hub",
+    "fskey": "SinPlayTheme",
+    "name": "SinPlay Theme",
     "description": "一个专注于 Cosplay 交流的社区主题",
-    "author": "CosplayHub Team",
-    "website": "https://cosplayhub.example.com",
+    "author": "Jaly",
+    "website": "sin.jaly.work",
     "version": "1.0.0",
     "functions": true,
     "functionItems": [
@@ -25,11 +25,11 @@
     ],
     "functionLang": {
         "zh-Hans": {
-            "name": "Cosplay Hub 主题",
+            "name": "SinPlay 主题",
             "description": "专注于 Cosplay 爱好者的交流社区主题，支持图片展示、互动交流等功能。"
         },
         "en": {
-            "name": "Cosplay Hub Theme",
+            "name": "SinPlay Theme",
             "description": "A community theme focused on Cosplay enthusiasts, supporting image showcase and interactive communication."
         }
     }

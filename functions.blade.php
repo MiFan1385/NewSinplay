@@ -36,7 +36,7 @@
                         </label>
                         <input type="text" 
                             name="site_name[zh-Hans]" 
-                            value="{{ $config['site_name']['zh-Hans'] ?? 'Cosplay Hub' }}"
+                            value="{{ $config['site_name']['zh-Hans'] ?? 'SinPlay' }}"
                             class="w-full px-3 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-purple-500">
                     </div>
                     

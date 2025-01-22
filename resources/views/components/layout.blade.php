@@ -19,7 +19,7 @@
     <nav class="bg-purple-700 text-white shadow-lg">
         <div class="container mx-auto px-4 py-3">
             <div class="flex justify-between items-center">
-                <div class="text-xl font-bold">Cosplay Hub</div>
+                <div class="text-xl font-bold">SinPlay</div>
                 <div class="space-x-4">
                     {{ $navigation ?? '' }}
                 </div>
