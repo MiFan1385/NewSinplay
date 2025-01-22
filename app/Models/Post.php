@@ -35,4 +35,9 @@ class Post extends Model
     {
         return $this->likes()->where('user_id', $user->id)->exists();
     }
+
+    public function topics()
+    {
+        return $this->belongsToMany(Topic::class);
+    }
 } 
